@@ -1,4 +1,3 @@
-// app/notes/filter/@sidebar/default.tsx
 import React from 'react';
 import Link from 'next/link';
 
@@ -11,8 +10,8 @@ const NoteSidebar = async () => {
     <div>
       <ul className={css.menuList}>
         <li className={css.menuItem}>
-          <Link href={`/notes/filter/All`} className={css.menuLink}>
-            All
+          <Link href="/notes/filter/all" className={css.menuLink}>
+            All notes
           </Link>
         </li>
         {Tags.map(tag => (
@@ -27,4 +26,4 @@ const NoteSidebar = async () => {
   );
 };
 
-export default NoteSidebar;
+export default NoteSidebar; 
